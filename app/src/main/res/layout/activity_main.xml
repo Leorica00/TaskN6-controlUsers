@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/update_user_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/update_user"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstname_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/costume_et"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="@string/firstname"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lastname_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/costume_et"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:hint="@string/lastname"
+            android:padding="15dp"
+            android:layout_marginTop="22dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/age_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/costume_et"
+            android:drawableStart="@drawable/age"
+            android:drawablePadding="10dp"
+            android:hint="@string/age"
+            android:inputType="numberDecimal"
+            android:padding="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/costume_et"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:padding="15dp"
+            android:layout_marginTop="22dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active_users_number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="15dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/active_users_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/removed_users_number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="15dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/removed_users_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/add_user"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/costume_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/remove_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/remove_user"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/costume_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/update_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/update_user"
+                android:textColor="@color/white"
+                android:background="@drawable/costume_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/go_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/go_back"
+                android:textColor="@color/white"
+                android:background="@drawable/costume_btn"
+                android:visibility="gone"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/answer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

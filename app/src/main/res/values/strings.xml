@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskN6</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="lastname">Lastname</string>
+    <string name="firstname">Firstname</string>
+    <string name="create_user">Create User</string>
+    <string name="removed_users_number">Removed Users Number:</string>
+    <string name="_0">0</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="update_user">Update User</string>
+    <string name="active_users_number">Active Users Number:</string>
+    <string name="age">Age</string>
+    <string name="go_back">Go Back</string>
+</resources>
