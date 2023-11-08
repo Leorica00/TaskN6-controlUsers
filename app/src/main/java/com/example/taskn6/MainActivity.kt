@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //with
         firstName = binding.firstnameEt
         lastName = binding.lastnameEt
         email = binding.emailEt
