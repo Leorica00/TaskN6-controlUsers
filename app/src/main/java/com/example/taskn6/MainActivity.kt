@@ -34,12 +34,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        firstName = binding.firstnameEt
-        lastName = binding.lastnameEt
-        email = binding.emailEt
-        age = binding.ageEt
-        activeUsersNumberText = binding.activeUsersNumberTv
-        removedUsersNumberText = binding.removedUsersNumberTv
+        with(binding){
+            firstName = firstnameEt
+            lastName = lastnameEt
+            email = emailEt
+            age = ageEt
+            activeUsersNumberText = activeUsersNumberTv
+            removedUsersNumberText = removedUsersNumberTv
+        }
+
 
         binding.addUser.setOnClickListener {
             if (fullValidation(firstName, lastName, email, age)) {
